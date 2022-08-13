@@ -1,0 +1,2 @@
+1 - Ternário
+2 - Execucação com boolean
