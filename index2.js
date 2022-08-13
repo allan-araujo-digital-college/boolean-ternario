@@ -1,22 +1,18 @@
-// console.log(10);
-// console.log(9);
-// console.log(8);
-// console.log(7);
-// console.log(6);
-// console.log(5);
-// console.log(4);
-// console.log(3);
-// console.log(2);
+let numeros = [100, 10, 29, -9, 20, 50];
 
-// for (let i = 10; i > 1; i = i - 1) {
-//   if(i === 3){
-//     console.log('o i ficou igual a 3')
-//   }
-//   console.log(i);
-// }
-// console.log('linha 18')
-
-for (let i = 1000; i <= 5000; i = i + 100) {
-  console.log(i);
+let contadorEntre0e25 = 0;
+let contadorEntre26e50 = 0;
+for (let i = 0; i < numeros.length; i++) {
+  let numero = numeros[i];
+  if (numero < 0) {
+    break;
+  }
+  if (numero >= 0 && numero <= 25) {
+    contadorEntre0e25++;
+  }
+  if (numero >= 26 && numero <= 50) {
+    contadorEntre26e50++;
+  }
 }
-console.log("linha 18");
+console.log("contadorEntre0e25", contadorEntre0e25);
+console.log("contadorEntre26e50", contadorEntre26e50);
